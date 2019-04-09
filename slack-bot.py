@@ -5,7 +5,7 @@ from slackclient import SlackClient
 def sayHi(slackClient, user):
     slackClient.api_call(
     "chat.postMessage",
-    channel='bot_testing',
+    channel='slack-bots',
     text='yo, <@%s>' %user)
 
 def parse_bot_commands(events):
